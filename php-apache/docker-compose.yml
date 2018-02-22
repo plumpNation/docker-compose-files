@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+
+  phpapache:
+    image: webdevops/php-apache-dev
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - .:/app/some-folder-name
